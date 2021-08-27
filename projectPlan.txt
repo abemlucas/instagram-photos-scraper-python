@@ -1,0 +1,16 @@
+Lvl 1
+
+Isolate the Images' URL
+Find a way to download the Images
+
+Lvl 2
+
+Make the system read the CSV File
+Use the CSV file to reach each account
+
+Lvl 3
+
+Find a quicker precise way of downloading 5 images.
+Use a for loop for the CSV files
+Isolate between the images/reels/videos
+Find a correct directory for storing the pictures
