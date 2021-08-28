@@ -11,7 +11,7 @@ with open('test.csv') as csvDataFile:
     csvReader = csv.reader(csvDataFile)
 
     for row in csvReader:
-        instagram_names.append(row[0])
+        instagram_names.append(row[1])
 
 while i < len(instagram_names):
 
