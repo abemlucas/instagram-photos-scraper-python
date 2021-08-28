@@ -6,7 +6,7 @@ instagram = Instagram()
 
 instagram_names = []
 i = 0
-with open('test.csv') as csvDataFile:
+with open('instagram.csv') as csvDataFile:
 
     csvReader = csv.reader(csvDataFile)
 
@@ -15,8 +15,8 @@ with open('test.csv') as csvDataFile:
 
 while i < len(instagram_names):
 
-    print(instagram_names[i])
-    medias = instagram.get_medias(str(instagram_names[i]))
+    print(instagram_names[1])
+    medias = instagram.get_medias(str(instagram_names[1]))
     media = medias[0]
     media1 = medias[1]
     media2 = medias[2]
