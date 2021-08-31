@@ -2,15 +2,10 @@ from context import Instagram
 from time import sleep
 import csv
 
-proxies = {
-    'http': 'http://150.239.66.202:3128',
-    'https': 'http://185.8.2.132:3128',
-}
 instagram = Instagram()
-instagram.set_proxies(proxies)
 
 instagram_names = []
-i = 0
+
 with open('instagram.csv') as csvDataFile:
 
     csvReader = csv.reader(csvDataFile)
