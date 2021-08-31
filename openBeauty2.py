@@ -2,25 +2,24 @@ from context import Instagram
 from time import sleep
 import csv
 
+proxies = {
+    'http': 'http://150.239.66.202:3128',
+    'https': 'http://185.8.2.132:3128',
+}
 instagram = Instagram()
+instagram.set_proxies(proxies)
 
 instagram_names = []
 i = 0
 with open('instagram.csv') as csvDataFile:
 
     csvReader = csv.reader(csvDataFile)
+    header = next(csvReader)
 
     for row in csvReader:
         instagram_names.append(row[1])
 
-while i < len(instagram_names):
-
-    print(instagram_names[1])
-    medias = instagram.get_medias(str(instagram_names[1]))
-    media = medias[0]
-    media1 = medias[1]
-    media2 = medias[2]
-    media3 = medias[3]
-    media4 = medias[4]
-    print(media, media1, media2, media3, media4)
-    i += 1
+    for account in instagram_names:
+        print(account)
+        medias = instagram.get_medias(account.strip(), 2)
+        print(medias)
