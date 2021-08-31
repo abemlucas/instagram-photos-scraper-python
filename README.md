@@ -22,4 +22,7 @@ source venv/bin/activate
 And to install packages inside the virtual environment, run:
 ```
 pip install -r requirements.txt
+
 ```
+
+# Contributors List
