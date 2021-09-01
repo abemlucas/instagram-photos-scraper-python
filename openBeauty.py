@@ -1,34 +1,30 @@
 from context import Instagram
-from time import sleep
-import pandas
+import time
 import csv
+import requests
 
 instagram = Instagram()
 
-# Created an array to store each instagram account.
-instagram_account = []
-
-# Used for the while loop.
+instagram_names = []
 i = 0
-
-medias = instagram.get_medias('medicalskinaesthetics')
-
-# Adding the instagram.csv file to the array (instagram_account)
 with open('instagram.csv') as csvDataFile:
 
     csvReader = csv.reader(csvDataFile)
+    header = next(csvReader)
 
     for row in csvReader:
-        instagram_account.append(row[1])
+        instagram_names.append(row[1])
 
-# While loop for printing the instagram.csv account names.
-while i < len(instagram_account):
-    print(instagram_account[i])
-    i += 1
+    for account in instagram_names:
+        print(account)
+        medias = instagram.get_medias(account.strip(), 5)
+        print(medias[0], medias[1], medias[2], medias[3], medias[4])
+        time.sleep(60)
 
-media = medias[0]
-media1 = medias[1]
-media2 = medias[2]
-media3 = medias[3]
-media4 = medias[4]
-print(media, media1, media2, media3, media4)
+#url = 'Hig Res Image'
+        url = ''
+        r = requests.get(url, allow_redirects=True)
+
+        open(account + '_image.jpg', 'wb').write(r.content)
+        print(r.headers.get('content-type'))
+# Downloads in current directory
