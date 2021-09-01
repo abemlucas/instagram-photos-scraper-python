@@ -1,5 +1,5 @@
 from context import Instagram
-from time import sleep
+import time
 import csv
 
 instagram = Instagram()
@@ -17,4 +17,5 @@ with open('instagram.csv') as csvDataFile:
     for account in instagram_names:
         print(account)
         medias = instagram.get_medias(account.strip(), 2)
-        print(medias)
+        print(medias[0])
+        time.sleep(30)
