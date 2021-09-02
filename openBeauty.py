@@ -23,7 +23,7 @@ with open('instagram.csv') as csvDataFile:
             # Downloads first URL
             url = (str(medias[i].image_high_resolution_url))
             r = requests.get(url, allow_redirects=True)
-            open(account + '_image' + i + '.jpg', 'wb').write(r.content)
+            open(account + '_image' + str(i) + '.jpg', 'wb').write(r.content)
             print(r.headers.get('content-type'))
             i += 1
 
