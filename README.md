@@ -8,13 +8,15 @@ Developing a program that downloads the first 5 photos of each Skincare service.
 
 ## Running locally
 
-Prerequisites: Python 3.6+, Recent version of pip
+Prerequisites: Python 3.6+, Upgraded Pip
 
 Updating pip on Windows:
 
 ```
 pip install --upgrade pip
 ```
+
+And to install packages, run:
 
 ```
 pip install -r requirements.txt
