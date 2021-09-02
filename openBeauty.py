@@ -4,7 +4,6 @@ import csv
 import requests
 
 instagram = Instagram()
-i = 0
 instagram_names = []
 with open('instagram.csv') as csvDataFile:
 
@@ -16,6 +15,7 @@ with open('instagram.csv') as csvDataFile:
 
     for account in instagram_names:
         print(account)
+        i = 0
         medias = instagram.get_medias(account.strip(), 5)
         # Optional print to see the URL
         # print(medias[0].image_high_resolution_url)
