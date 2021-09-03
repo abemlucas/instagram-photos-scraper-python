@@ -29,7 +29,8 @@ with open('instagram.csv') as csvDataFile:
 
         # Optional print to see the URL
         # print(medias[0].image_high_resolution_url)
-
+        
+        #Change the value of i to change the number of photos downloaded.
         while i < 5:
 
             # Downloads URL as high resolution image regardless of type.
