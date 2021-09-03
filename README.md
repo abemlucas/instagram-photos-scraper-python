@@ -6,7 +6,7 @@ Developing a program that downloads the desired number of photos of each Instagr
 
 ## Prerequisites:
 
-Python 3.6+, Upgraded Pip,'images' folder.
+Python 3.6+ , Upgraded Pip , 'images' folder.
 
 Updating pip on Windows:
 
