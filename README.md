@@ -4,9 +4,9 @@
 
 Developing a program that downloads the desired number of photos of each Instagram account found in the instagram.csv file.
 
-## Running locally
+## Prerequisites:
 
-Prerequisites: Python 3.6+, Upgraded Pip, Create an 'images' folder.
+Python 3.6+, Upgraded Pip,'images' folder.
 
 Updating pip on Windows:
 
@@ -20,4 +20,4 @@ And to install packages, run:
 pip install -r requirements.txt
 ```
 
-### For PUBLIC ACCOUNTS
+### Runs for PUBLIC ACCOUNTS only.
