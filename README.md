@@ -2,7 +2,7 @@
 
 # Project Info
 
-Developing a program that downloads the desired number of photos of each Instagram account found in a .csv file.
+Developing a program that downloads the desired number of photos of each Instagram account found in the instagram.csv file.
 
 ## Running locally
 
