@@ -31,16 +31,16 @@ with open('instagram.csv') as csvDataFile:
         # print(medias[0].image_high_resolution_url)
         
         #Change the value of i to change the number of photos downloaded.
-        while i < 5:
+        for posts in medias:
 
             # Downloads URL as high resolution image regardless of type.
 
-            url = (str(medias[i].image_high_resolution_url))
+            url = (str(posts.image_high_resolution_url))
             r = requests.get(url, allow_redirects=True)
             
             #Creat an 'images' folder in working directory before running.
             open('images/' + account + '_image' + str(i) + '.jpg', 'wb').write(r.content)
-            print(r.headers.get('content-type'))
+            print(url)
             i += 1
 
         time.sleep(60)
