@@ -6,7 +6,8 @@ Developing a program that downloads the desired number of photos of each Instagr
 
 ## Prerequisites:
 
-Python 3.6+ , Upgraded Pip , 'images' folder.
+Python 3.6+ , Upgraded Pip, Update the instagram.csv file, Create an 'images' folder.
+
 
 Updating pip on Windows:
 
@@ -20,4 +21,4 @@ And to install packages, run:
 pip install -r requirements.txt
 ```
 
-### Runs for PUBLIC ACCOUNTS only.
+### Runs for PUBLIC ACCOUNT.
