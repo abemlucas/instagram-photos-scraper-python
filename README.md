@@ -1,4 +1,4 @@
-# Instagram Scraper for Public Accounts
+# Instagram Scraper Photos
 
 # Project Info
 
