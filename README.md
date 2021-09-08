@@ -1,14 +1,13 @@
-# OpenBeauty-
-
-A website designed to assist it's users into selecting a suitable skin care method.
+# Instagram Scraper Photos
 
 # Project Info
 
-Developing a program that downloads the first 5 photos of each Skincare service.
+Developing a program that downloads the desired number of photos of each Instagram account found in the instagram.csv file.
 
-## Running locally
+## Prerequisites:
 
-Prerequisites: Python 3.6+, Upgraded Pip
+Python 3.6+ , Upgraded Pip, Update the instagram.csv file, Create an 'images' folder.
+
 
 Updating pip on Windows:
 
@@ -21,3 +20,5 @@ And to install packages, run:
 ```
 pip install -r requirements.txt
 ```
+
+### Runs for PUBLIC ACCOUNT.
